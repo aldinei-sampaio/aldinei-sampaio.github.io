@@ -1,0 +1,290 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+/* /Pages/BoardPanel.razor.rz.scp.css */
+.fieldTable[b-j0p0uvwq2t] {
+    border-bottom: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fieldCell[b-j0p0uvwq2t] {
+    width: 24px;
+    height: 24px;
+    font-size: 10pt;
+    font-weight: bold;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-bottom: none;
+    border-right: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+}
+
+/* Ensure SquarePanel contents also fill the cell and remain square on larger screens */
+.square[b-j0p0uvwq2t] {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Mobile: make cells stretch to fit width and keep square aspect ratio */
+@media (max-width: 767px) {
+    .fieldTable[b-j0p0uvwq2t] {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    /* Use the --cols CSS variable set on the table to divide width evenly */
+    .fieldCell[b-j0p0uvwq2t] {
+        width: calc(100% / var(--cols));
+        padding: 0;
+    }
+
+    /* Keep the SquarePanel content square using aspect-ratio */
+    .square[b-j0p0uvwq2t] {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        height: auto;
+    }
+}
+/* /Pages/FlagDisplayPanel.razor.rz.scp.css */
+.flagDisplay[b-rrkb9xl26a] {
+    width: 73px;
+    height: 24px;
+    background: black;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+img[b-rrkb9xl26a] {
+    margin: 1px;
+    display: block;
+}
+/* /Pages/GamePanel.razor.rz.scp.css */
+.mainTable[b-w60vr9lq35] {
+    min-width: 200px;
+    border-bottom: 1px solid #C0C0C0;
+    cursor: default;
+    user-select: none;
+}
+
+    .mainTable td[b-w60vr9lq35] {
+        border-left: 1px solid #C0C0C0;
+        border-right: 1px solid #C0C0C0;
+        border-top: 1px solid #C0C0C0;
+    }
+
+        .mainTable td table td[b-w60vr9lq35] {
+            border: none;
+            padding: 0;
+        }
+
+.headerPanel[b-w60vr9lq35] {
+    text-align: center;
+    background-color: #D0D0D0;
+    padding: 3px;
+}
+
+.footerPanel[b-w60vr9lq35] {
+    background-color: #D0D0D0;
+    padding: 3px;
+}
+/* /Pages/Home.razor.rz.scp.css */
+h1[b-zsbkllhcba] {
+    margin: 0;
+}
+
+p[b-zsbkllhcba] {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
+/* /Pages/ImagePreloader.razor.rz.scp.css */
+.image-preloader[b-3m8suxcrg0] {
+    display:flex;
+    padding:8px;
+}
+
+.progress-wrapper[b-3m8suxcrg0] {
+    width:100%;
+    max-width:420px;
+}
+
+.progress[b-3m8suxcrg0] {
+    background: #eee;
+    border: 1px solid #ccc;
+    height: 18px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill[b-3m8suxcrg0] {
+    background: #4caf50;
+    height: 100%;
+    transition: width 200ms linear;
+}
+
+.progress-text[b-3m8suxcrg0] {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.progress-complete[b-3m8suxcrg0] {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.preload-img[b-3m8suxcrg0] {
+    display: none;
+}
+/* /Pages/ResetPanel.razor.rz.scp.css */
+.resetPanel[b-6siweixpjf] {
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+/* /Pages/SettingsPanel.razor.rz.scp.css */
+.optionsPanel[b-dr9irqw12r] {
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px gray;
+    padding: 10px;
+    background: #d4d0c8;
+    width: 350px;
+    font-size: 9pt;
+}
+
+h2[b-dr9irqw12r] {
+    margin: 0;
+}
+
+table[b-dr9irqw12r] {
+    margin-bottom: 10px;
+}
+
+td[b-dr9irqw12r] {
+    width: 200px;
+}
+
+p[b-dr9irqw12r] {
+    margin: 0;
+    padding: 0;
+}
+
+[b-dr9irqw12r] input[type="number"] {
+    width: 40px;
+    display: inline-block;
+}
+
+button[b-dr9irqw12r] {
+    width: 70px;
+    padding: 3px;
+    margin-left: 3px;
+}
+/* /Pages/SquarePanel.razor.rz.scp.css */
+.square[b-9rf3572ozu] {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+
+.square-closed[b-9rf3572ozu] {
+}
+
+.square-button[b-9rf3572ozu] {
+    background-image: url(images/NormalButtonReady.png);
+    box-sizing: border-box;
+    cursor: pointer;
+    border-style: outset;
+    border: 1px solid #E0E0E0;
+}
+
+    .square-button:hover[b-9rf3572ozu] {
+        background-image: url(images/NormalButtonHover.png);
+    }
+
+    .square-button:active[b-9rf3572ozu] {
+        background-image: url(images/NormalButtonPressed.png);
+    }
+
+.square-open[b-9rf3572ozu] {
+    background-color: #e5efde;
+}
+
+.square-exploded[b-9rf3572ozu] {
+    background-color: red;
+}
+
+.tip-safe[b-9rf3572ozu] {
+    background-image: url(images/TipGreen.png);
+}
+
+    .tip-safe.square-button[b-9rf3572ozu] {
+        background-image: url(images/TipButtonReady.png);
+    }
+
+        .tip-safe.square-button:hover[b-9rf3572ozu] {
+            background-image: url(images/TipButtonHover.png);
+        }
+
+        .tip-safe.square-button:active[b-9rf3572ozu] {
+            background-image: url(images/TipButtonPressed.png);
+        }
+
+.tip-mine[b-9rf3572ozu] {
+    background-image: url(images/TipRed.png);
+}
+
+    .tip-mine.square-button[b-9rf3572ozu] {
+        background-image: url(images/TipRedButtonReady.png);
+    }
+
+        .tip-mine.square-button:hover[b-9rf3572ozu] {
+            background-image: url(images/TipRedButtonHover.png);
+        }
+
+        .tip-mine.square-button:active[b-9rf3572ozu] {
+            background-image: url(images/TipRedButtonPressed.png);
+        }
+
+img[b-9rf3572ozu] {
+    margin: auto;
+    height: auto;
+}
+/* /Pages/TimerPanel.razor.rz.scp.css */
+.timerPanel[b-w6q59q2abc] {
+    margin-left: auto;
+    width: 73px;
+    height: 24px;
+    background: black;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+img[b-w6q59q2abc] {
+    margin: 1px;
+    display: block;
+}
+
+.points[b-w6q59q2abc] {
+    margin: 1px;
+}
+/* /Pages/TipPanel.razor.rz.scp.css */
+button[b-sk2jirtyws] {
+    margin-right: 3px;
+}
+
+.message[b-sk2jirtyws] {
+    display: inline-block;
+    font-size: smaller;
+    margin-left: 2px;
+    font-style: italic;
+}
